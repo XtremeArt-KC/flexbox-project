@@ -1,0 +1,630 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* reset-styles */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', verdana;
+    background-color: rgb(206, 206, 206);
+}
+
+html{
+    font-size: 60%;
+    scroll-behavior: smooth;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 300px;
+    display: flex;
+}
+
+/* reusable-code */
+.title{
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    text-align: center;
+    display: block;
+    padding: 2rem 0;
+
+}
+
+.container{
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.btn{
+    background-color: transparent;
+    outline: none;
+    border: 1px solid rgb(172, 169, 169);
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    color: white;
+    font-size: 2rem;
+    transition: all .3s ease-in-out;
+}
+
+/* header */
+header{
+    height: 5.8rem;
+    background-color: #000;
+    display: flex;
+    margin: 0 auto;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+ .section-padding{
+    padding-top: 5.8rem;
+ }
+
+.navigation{
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size: 2rem;
+    color: white;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.nav-link{
+    font-size: 1.3rem;
+    color: #fff;
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+/* hero-section */
+.hero{
+    margin-top: 5.8rem;
+    background-color: rgba(56, 56, 56, 0.904);
+    
+}
+
+.hero-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    margin: 0 auto;
+    overflow: hidden;
+
+}
+
+.description{
+    padding: 0 2rem 0 0;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.greeting{
+    font-size: 6.5rem;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.name{
+    color: rgb(172, 169, 169);
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.text{
+    max-width: 80%;
+    font-size: 1.5rem;
+    color: rgb(211, 210, 210);
+    line-height: 22px;
+}
+
+.home-button{
+    margin-top: 5rem;
+}
+
+.home:hover{
+    background-color: rgb(172, 169, 169);
+}
+
+.profile{
+    width: 120%;
+    height: 40%;
+}
+
+.profile img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+
+/* services-section */
+.services-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35vh;
+}
+
+.services-wrapper .box{
+    padding: 1.5rem 2rem;
+    box-shadow: 2px 3px 5px rgb(129, 129, 129);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.box i{
+    font-size: 6.6rem;
+}
+
+.box .head{
+    font-size: 2rem;
+    color: rgb(92, 92, 92);
+    padding-bottom: 1rem;
+}
+
+.box .body{
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 19px;
+    color: rgb(110, 110, 110);
+    padding-bottom: 1rem;
+}
+
+.box-2{
+    margin: 0 2rem;
+}
+
+.service-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 7rem;
+}
+
+.service-btn{
+    color: black;
+    margin: 0 auto;
+    align-self: center;
+}
+
+.service-btn:hover{
+    background-color: rgb(141, 141, 141);
+    color: rgb(233, 233, 233);
+}
+
+/* features-section */
+.features{
+    background-color: black;
+    color: white;
+    height: 70vh;
+}
+
+.content-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5rem;
+    height: 80%;
+}
+
+.content-wrapper img{
+    width: 40%;
+    height: 60%;
+    border-radius: 10px;
+}
+
+.featurelets{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.featurelets .item{
+    display: flex;
+}
+
+.featurelets .item .feature-icon{
+    font-size: 5.5rem;
+    margin-right: 1rem;
+}
+
+.feature-desc{
+    padding: .8rem 0 0 0;
+}
+
+.feature-desc .feature-title{
+    font-size: 2rem;
+    color: rgb(216, 216, 216);
+    margin-bottom: .4rem;
+}
+
+.feature-desc .feature-body{
+    font-size: 1.2rem;
+    color: rgb(139, 139, 139);
+}
+
+/* testimonials section */
+
+.testimonials-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 90%;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3rem 0;
+}
+
+.testimonials-wrapper .image{
+    display: flex;
+    flex-direction: column;
+    width: 490px;
+    height: auto;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 2px 3px 5px rgb(129, 129, 129);
+    margin-bottom: 2.5rem;
+    background-color: rgb(214, 214, 214);
+}
+
+.client-details{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: auto;
+    align-self: flex-start;
+    align-items: center;
+}
+
+.client-details img{
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.client-details .identity{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    padding: .5rem 1rem;
+    border-left: 3px solid grey;
+}
+
+.identity .name{
+    color: rgb(90, 90, 90);
+    font-size: 3.5rem;
+    line-height: 15px;
+}
+
+.identity .mail{
+    color: rgb(149, 149, 149);
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.image p{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem 0 .5rem;
+    line-height: 18px;
+    font-size: 1.4rem;
+    text-align: justify;
+}
+
+.image p .g-btn{
+    display: inline-block;
+    margin-top: 1.5rem;
+    align-self: flex-start;
+    color: black;
+}
+
+.g-btn:hover{
+    color: rgba(204, 204, 204, 0.76);
+    background-color: rgb(80, 80, 80);
+}
+
+
+/* business-section */
+.business{
+    background-color: rgb(172, 169, 169);
+}
+
+.business-wrapper{
+    display: flex;
+    padding: 5rem 0 8rem 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.business-wrapper .card{
+    width: 30rem;
+    height: auto;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 3px 4px 5px rgba(58, 58, 58, 0.938);
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
+}
+
+.card .card-icon{
+    font-size: 5.5rem;
+    margin-bottom: 1rem;
+}
+
+.card .card-title{
+    font-size: 2.4rem;
+    color: rgb(110, 110, 110);
+}
+
+.card .price{
+    font-size: 3.5rem;
+    padding: 1rem 0 2rem;
+    font-weight: bolder;
+}
+
+.card .price span{
+    font-size: 3rem;
+    color: grey;
+}
+
+.card-desc{
+    font-size: 1.5rem;
+    color: rgb(78, 78, 78);
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.card .btn{
+    width: 85%;
+    margin-bottom: 1rem;
+}
+
+.btn-1{
+    background-color: grey;
+    color: rgb(190, 190, 190);
+}
+.btn-2{
+    background-color: rgba(25, 144, 255, 0.924);
+    color: rgb(190, 190, 190);
+}
+
+.offers{
+    padding-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.offer-item{
+    font-size: 1.6rem;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.offer-item i{
+    margin-right: 1rem;
+    font-size: 2.5rem;
+    color: rgb(78, 78, 78);
+}
+
+/* footer */
+footer{
+    background-color: rgb(51, 51, 51);    
+    height: 20vh;
+}
+
+.footer{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-title{
+    color: rgb(143, 143, 143);
+    font-size: 2rem;
+}
+
+.footer-description{
+    color: rgb(95, 95, 95);
+    font-size: 1.3rem;
+    padding: 1.4rem 0;
+    text-align: center;
+}
+
+.footer-social i{
+    font-size: 3rem;
+    padding: 0.8rem;
+    color: rgb(116, 116, 116);
+    transition: all .3s ease-in-out;
+}
+
+.footer-social i:hover{
+    color: black;
+    transform: scale(1.06);
+}
+
+.menu{
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+    .testimonials-wrapper{
+        padding: 0 1.5rem;
+    }
+}
+
+
+
+
+@media screen and (max-width: 1140px) {
+    section{
+        padding: 0 2.5rem;
+        margin: 0 auto;
+    }
+
+    .navigation{
+        padding: 0 2.5rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .navigation{
+        padding: 0 2rem;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .nav{
+        flex-direction: column;
+        text-align: center;
+        height: 40vh;
+        width: 100%;
+        background-color: gray;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        padding: 4rem 0;
+        position: absolute;
+        top: calc(-40vh - 5rem);
+        left: 0;
+        transition: all .3s ease-in-out;
+    }
+    .active{
+        top: 5rem;
+    }
+
+    .menu{
+        display: block;
+    }
+
+    .menu i{
+        font-size: 3.5rem;
+        color: white;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+    }
+    .menu i:hover{
+        transform: translate(left -2px);
+    }    
+    
+}
+@media screen and (max-width: 700px) {
+    .hero-wrapper{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    .text{
+        margin: 0 auto;
+        max-width: 90%;
+    }
+
+    .profile{
+        width: 80%;
+        height: 300px;
+        bottom: -1rem;
+    }
+
+    .services{
+        height: 100vh;
+    }
+    .services-wrapper{
+        display: flex;
+        height: 85%;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .box{
+        width: 80%;
+    }
+
+    .content-wrapper{
+        flex-direction: column;
+    }
+
+    .content-wrapper img{
+        width: 90%;
+    }
+
+    .featurelets{
+        margin-top: 3rem;
+    }
+
+    .gallery-wrapper{
+        padding: 0 1.5rem;
+    }
+
+    .gallery-wrapper .image{
+        width: 400px;
+
+    }
+
+    .gallery-wrapper .image img{
+        width: 155px;
+    }
+
+    .gallery-wrapper .image p{
+        text-align: center;
+    }
+
+    .gallery-wrapper .image p .btn{
+        display: none;
+    }
+
+    .business-wrapper{
+        flex-direction: column;
+    }
+
+    .card{
+        margin-bottom: 3rem;
+    }
+}
+
+/*  */
